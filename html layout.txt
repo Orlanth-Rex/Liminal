@@ -1,0 +1,319 @@
+<table>
+    <br>
+     <br>
+     <br>
+     <br>
+    <br>
+     <br>
+     <br>
+     <br>
+     <br>
+    
+     
+	<td>
+	<tr>
+		<span class="sheet-auto-style1">&nbsp;&nbsp; Name&nbsp; </span>
+		<input name="attr_name" style="width: 200px" type="text" />
+		<span class="sheet-auto-style1">&nbsp;&nbsp; Concept&nbsp; </span>
+		<input name="attr_concept" style="width: 400px" type="text" />
+		
+		</tr>
+	</td>
+	<br>
+	<br>
+	<tr>
+		<span class="sheet-auto-style1">&nbsp;&nbsp; Drive&nbsp; </span>
+		<input name="attr_drive" style="width: 400px" type="text" />
+		<span class="sheet-auto-style1">&nbsp;&nbsp; Focus&nbsp; </span>
+		<input name="attr_focus" style="width: 200px" type="text" />
+		</tr>
+	</td>
+<br>
+<br>
+    
+	<td>
+	    <span class="sheet-auto-style1">&nbsp;&nbsp; Skill Cap&nbsp;</span>
+		<input name="attr_skill" style="width: 50px" type="number" />
+	</td>
+		<td>
+	    <span class="sheet-auto-style1">&nbsp;&nbsp; Starting Endurance&nbsp;</span>
+		<input name="attr_end1" style="width: 50px" type="number" />
+		<span class="sheet-auto-style1"> (Current)</span>
+		<input name="attr_end2" style="width: 50px" type="number" />
+	</td>
+		<td>
+	    <span class="sheet-auto-style1">&nbsp;&nbsp; Starting Will&nbsp;</span>
+		<input name="attr_Will1" style="width: 50px" type="number" />
+		<span class="sheet-auto-style1"> (Current)</span>
+		<input name="attr_will2" style="width: 50px" type="number" />
+	</td>
+		<td>
+	    <span class="sheet-auto-style1">&nbsp;&nbsp; Damage&nbsp;</span>
+		<input name="attr_damage" style="width: 50px" type="text" />
+	</td>
+		</table>
+		</td>
+		
+		<table>
+		     <br>
+    
+			<tr>
+				<td class="sheet-auto-style1" colspan="2">PHYSICAL</td>
+				<td class="sheet-auto-style1" colspan="2">MENTAL</td>
+				<td class="sheet-auto-style1" colspan="2">SOCIAL</td>
+			</tr>
+   
+			<tr class="sheet-auto-style14" >
+				<td class="sheet-auto-style1" style="height: 34px">Athletics</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_athletics" style="width: 40px" type="number" /> 
+				<input name="attr_athletics2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Athletics...}} {{Result=[[2d6 + @{Athletics} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Art</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_art" style="width: 40px" type="number" />
+				<input name="attr_art2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Art...}} {{Result=[[2d6 + @{Art} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Charm</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_charm" style="width: 40px" type="number" />
+				<input name="attr_charm2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Charm...}} {{Result=[[2d6 + @{Charm} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+		</tr>
+<tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Awareness</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Awareness" style="width: 40px" type="number" /> 
+				<input name="attr_awareness2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Awareness...}} {{Result=[[2d6 + @{Awareness} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Business</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Business" style="width: 40px" type="number" /> 
+				<input name="attr_business2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Business...}} {{Result=[[2d6 + @{Business} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Conviction</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Conviction" style="width: 40px" type="number" /> 
+				<input name="attr_conviction2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Conviction...}} {{Result=[[2d6 + @{Conviction} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+			<tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Melee</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Melee" style="width: 40px" type="number" /> 
+				<input name="attr_melee2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Melee...}} {{Result=[[2d6 + @{Melee} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Education</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Education" style="width: 40px" type="number" />
+				<input name="attr_education2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Education...}} {{Result=[[2d6 + @{Education} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Empathy</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Empathy" style="width: 40px" type="number" /> 
+				<input name="attr_empathy2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Empathy...}} {{Result=[[2d6 + @{Empathy} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+            <tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Shoot</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Shoot" style="width: 40px" type="number" /> 
+				<input name="attr_shoot2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Shoot...}} {{Result=[[2d6 + @{Shoot} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Lore</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Lore" style="width: 40px" type="number" />
+				<input name="attr_lore2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Lore...}} {{Result=[[2d6 + @{Lore} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">High Society</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_High_Society" style="width: 40px" type="number" /> 
+				<input name="attr_hs2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling High Society...}} {{Result=[[2d6 + @{High_Society} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+	
+		
+<tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Stealth</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Stealth" style="width: 40px" type="number" />
+				<input name="attr_stealth2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Stealth...}} {{Result=[[2d6 + @{Stealth} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Medicine</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Medicine" style="width: 40px" type="number" />
+				<input name="attr_medicine2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Medicine...}} {{Result=[[2d6 + @{Medicine} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Rhetoric</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Rhetoric" style="width: 40px" type="number" />
+				<input name="attr_rhetoric2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Rhetoric...}} {{Result=[[2d6 + @{Rhetoric} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+			<tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Survival</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Survival" style="width: 40px" type="number" /> 
+				<input name="attr_survival2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Survival...}} {{Result=[[2d6 + @{Survival} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Science</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Science" style="width: 40px" type="number" />
+				<input name="attr_science2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Science...}} {{Result=[[2d6 + @{Science} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Streetwise</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Streetwise" style="width: 40px" type="number" /> 
+				<input name="attr_streetwise2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Streetwise...}} {{Result=[[2d6 + @{Streetwise} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+				<tr class="sheet-auto-style14">
+				<td class="sheet-auto-style1">Vehicles</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Vehicles" style="width: 40px" type="number" /> 
+				<input name="attr_vehicles2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Vehicles...}} {{Result=[[2d6 + @{Vehicles} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+				
+				
+				
+				<td class="sheet-auto-style1" style="height: 34px">Technology</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Technology" style="width: 40px" type="number" />
+				<input name="attr_tech2" style="width: 120px" type="text" />
+				<button type='roll' value='&{template:default} {{name=Rolling Technology...}} {{Result=[[2d6 + @{Technology} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+				<td class="sheet-auto-style1" style="height: 34px">Taunt</td>
+				<td class="sheet-auto-style12" style="height: 40px">
+				<input name="attr_Taunt" style="width: 40px" type="number" /> 
+					<input name="attr_taunt2" style="width: 120px" type="text" />
+					<button type='roll' value='&{template:default} {{name=Rolling Taunt...}} {{Result=[[2d6 + @{Taunt} + {?{Trait Bonus?|0,0|1,1|2,2|3,3|4,4}} ]]}}'/>
+			
+			</tr>
+			
+
+		</table>
+		 <br>
+
+		</td>
+	</tr>
+</table>
+<table>
+	<tr class="sheet-auto-style1">
+		<td class="sheet-auto-style1">EQUIPMENT</td>
+		<td class="sheet-auto-style1">TRAITS & LIMITATIONS</td>
+		<td class="sheet-auto-style1">NOTES</td>
+	</tr>
+	<tr>
+		<td class="sheet-auto-style1">
+		<textarea name="attr_special_gears" rows="1" style="height: 150px; width: 300px"></textarea></td>
+		<td class="sheet-auto-style1">
+		<textarea name="attr_equipment" rows="1" style="height: 150px; width: 300px"></textarea></td>
+		<td class="sheet-auto-style1" style="width: 195px">
+		<textarea name="attr_other" rows="1" style="height: 150px; width: 300px"></textarea></td>
+	</tr>
+</table>
+<table>
+
+	<td>
+	
+		<span class="sheet-auto-style1">&nbsp;&nbsp; EXPERIENCE&nbsp; </span>
+		<input name="attr_exp1" style="width: 40px" type="checkbox" />
+		<input name="attr_exp2" style="width: 40px" type="checkbox" />
+		<input name="attr_exp3" style="width: 40px" type="checkbox" />
+		<input name="attr_exp4" style="width: 40px" type="checkbox" />
+		<input name="attr_exp5" style="width: 40px" type="checkbox" />
+		<br>
+		</td>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px">Tick an experience box IMMEDIATELY when:</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px">• You roll two 1s and fail a skill roll and choose not to spend Will to improve the result</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • You engage a Drive and generate more Will than you can use. You can only do this once per game session.</td>
+			</tr>
+		<br>
+		<br>
+		<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px">Tick an experience box AT THE END OF A SESSION when:</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • Your character learns something new about the Hidden World.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • You have advanced your Crew’s goal.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • Your Crew has concluded its current case successfully.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • You learn something new and important about your Crew or one of its members.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px">WHEN ALL FIVE EXPERIENCE BOXES ARE FULL, erase the ticks and tick an advancement box.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+			    	<td class="sheet-auto-style1" style="height: 34px">You can raise a single skill of your choice by one, up to a maximum of your Skill Cap.</td>
+			</tr>
+		
+	
+		</table>
+		<table>
+	<td>
+		<span class="sheet-auto-style1">&nbsp;&nbsp; ADVANCEMENT&nbsp; </span>
+		<input name="attr_adv1" style="width: 40px" type="checkbox" />
+		<input name="attr_adv2" style="width: 40px" type="checkbox" />
+		<input name="attr_adv3" style="width: 40px" type="checkbox" />
+		<br>
+		</td>
+		<br>
+		<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px">WHEN ALL THREE ADVANCEMENT BOXES are full, erase the ticks and do one of the following:</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • Increase your Skill Cap by one.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • Take a new one point Trait.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • 'Bank' a point for a two point Trait later on.</td>
+			</tr>
+			<tr class="sheet-auto-style1" >
+				<td class="sheet-auto-style1" style="height: 34px"> • Give your Crew a new Asset.</td>
+			</tr>
+		
+			
+	
+		</table>
